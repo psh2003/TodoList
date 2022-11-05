@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|Win32">
+      <Configuration>DebugRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|Win32">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FormTasks.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormTasks.nfr" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FormTasks.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{dd55d908-d56f-4061-af65-4ae8f68bc3f1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TodoList</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>x86\Debug\</IntDir>
+    <IncludePath>$(MSBuildExtensionsPath)\Nitisa\$(Version);$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <IntDir>x86\DebugRT\</IntDir>
+    <IncludePath>$(MSBuildExtensionsPath)\Nitisa\$(Version);$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>x64\Debug\</IntDir>
+    <IncludePath>$(MSBuildExtensionsPath)\Nitisa\$(Version);$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <IntDir>x64\DebugRT\</IntDir>
+    <IncludePath>$(MSBuildExtensionsPath)\Nitisa\$(Version);$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>x86\Release\</IntDir>
+    <IncludePath>$(MSBuildExtensionsPath)\Nitisa\$(Version);$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <IntDir>x86\ReleaseRT\</IntDir>
+    <IncludePath>$(MSBuildExtensionsPath)\Nitisa\$(Version);$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>x64\Release\</IntDir>
+    <IncludePath>$(MSBuildExtensionsPath)\Nitisa\$(Version);$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <IntDir>x64\ReleaseRT\</IntDir>
+    <IncludePath>$(MSBuildExtensionsPath)\Nitisa\$(Version);$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Debug</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Debug\Nitisa.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Nitisa\Nitisa.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Debug\Standard.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Standard\Standard.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Debug\Platform.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Platform\Platform.vcxproj")
+		    if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Debug\Extended.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Extended\Extended.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Debug\OpenGL.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\OpenGL\OpenGL.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Debug\Charts.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Charts\Charts.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Debug\Ide.lib"      ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Ide\Ide.vcxproj")
+      </Command>
+      <Message>Preparing Nitisa framework</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\DebugRT</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\DebugRT\Nitisa.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Nitisa\Nitisa.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\DebugRT\Standard.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Standard\Standard.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\DebugRT\Platform.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Platform\Platform.vcxproj")
+		    if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\DebugRT\Extended.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Extended\Extended.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\DebugRT\OpenGL.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\OpenGL\OpenGL.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\DebugRT\Charts.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Charts\Charts.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\DebugRT\Ide.lib"      ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Ide\Ide.vcxproj")
+      </Command>
+      <Message>Preparing Nitisa framework</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Debug</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Debug\Nitisa.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Nitisa\Nitisa.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Debug\Standard.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Standard\Standard.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Debug\Platform.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Platform\Platform.vcxproj")
+		    if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Debug\Extended.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Extended\Extended.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Debug\OpenGL.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\OpenGL\OpenGL.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Debug\Charts.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Charts\Charts.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Debug\Ide.lib"      ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Debug "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Ide\Ide.vcxproj")
+      </Command>
+      <Message>Preparing Nitisa framework</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\DebugRT</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\DebugRT\Nitisa.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Nitisa\Nitisa.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\DebugRT\Standard.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Standard\Standard.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\DebugRT\Platform.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Platform\Platform.vcxproj")
+		    if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\DebugRT\Extended.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Extended\Extended.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\DebugRT\OpenGL.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\OpenGL\OpenGL.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\DebugRT\Charts.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Charts\Charts.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\DebugRT\Ide.lib"      ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=DebugRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Ide\Ide.vcxproj")
+      </Command>
+      <Message>Preparing Nitisa framework</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Release</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Release\Nitisa.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Nitisa\Nitisa.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Release\Standard.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Standard\Standard.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Release\Platform.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Platform\Platform.vcxproj")
+		    if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Release\Extended.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Extended\Extended.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Release\OpenGL.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\OpenGL\OpenGL.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Release\Charts.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Charts\Charts.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\Release\Ide.lib"      ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Ide\Ide.vcxproj")
+      </Command>
+      <Message>Preparing Nitisa framework</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\ReleaseRT</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\ReleaseRT\Nitisa.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Nitisa\Nitisa.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\ReleaseRT\Standard.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Standard\Standard.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\ReleaseRT\Platform.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Platform\Platform.vcxproj")
+		    if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\ReleaseRT\Extended.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Extended\Extended.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\ReleaseRT\OpenGL.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\OpenGL\OpenGL.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\ReleaseRT\Charts.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Charts\Charts.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x86\ReleaseRT\Ide.lib"      ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=Win32;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Ide\Ide.vcxproj")
+      </Command>
+      <Message>Preparing Nitisa framework</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Release</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Release\Nitisa.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Nitisa\Nitisa.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Release\Standard.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Standard\Standard.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Release\Platform.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Platform\Platform.vcxproj")
+		    if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Release\Extended.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Extended\Extended.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Release\OpenGL.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\OpenGL\OpenGL.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Release\Charts.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Charts\Charts.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\Release\Ide.lib"      ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=Release "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Ide\Ide.vcxproj")
+      </Command>
+      <Message>Preparing Nitisa framework</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\ReleaseRT</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\ReleaseRT\Nitisa.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Nitisa\Nitisa.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\ReleaseRT\Standard.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Standard\Standard.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\ReleaseRT\Platform.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Platform\Platform.vcxproj")
+		    if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\ReleaseRT\Extended.lib" ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Extended\Extended.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\ReleaseRT\OpenGL.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\OpenGL\OpenGL.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\ReleaseRT\Charts.lib"   ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Charts\Charts.vcxproj")
+        if not exist "$(ALLUSERSPROFILE)\Nitisa\$(Version)\bin\Windows\x64\ReleaseRT\Ide.lib"      ("$(MSBuildBinPath)\msbuild.exe" -nologo -v:m -p:Platform=x64;Configuration=ReleaseRT "$(MSBuildExtensionsPath)\Nitisa\$(Version)\Packages\Ide\Ide.vcxproj")
+      </Command>
+      <Message>Preparing Nitisa framework</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

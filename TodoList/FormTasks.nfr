@@ -1,0 +1,244 @@
+{
+    Layout: "Windows Form",
+    Version: "2.0",
+    Form: {
+        Name: "FormTasks",
+        Caption: "Todo list",
+        ClientSize: [
+            555,
+            261
+        ]
+    },
+    Controls: [
+        {
+            Package: "Standard",
+            ClassName: "Edit",
+            Name: "EditTask",
+            Font: {
+                FontName: "Tahoma",
+                Height: -21,
+                Weight: 3,
+                Distance: 0,
+                Color: [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                ShadowShift: [
+                    0,
+                    0
+                ],
+                ShadowRadius: 1,
+                ShadowColor: [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                Italic: false,
+                Underline: false,
+                StrikeOut: false,
+                Monospace: false
+            },
+            Transform: {
+                Tx: 8,
+                Ty: 8,
+                Tz: 0,
+                Sx: 1,
+                Sy: 1,
+                Sz: 1,
+                Rx: 0,
+                Ry: 0,
+                Rz: 0,
+                RO: "RotateOrder::XYZ",
+                TO: "TransformOrder::TRS"
+            },
+            Size: [
+                392,
+                37
+            ],
+            TabOrder: 1,
+            UseParentFont: false,
+            Text: "",
+            OnKeyUp: "EditTask_OnKeyUp"
+        },
+        {
+            Package: "Standard",
+            ClassName: "CheckListBox",
+            Name: "ListTasks",
+            Font: {
+                FontName: "Tahoma",
+                Height: -19,
+                Weight: 3,
+                Distance: 0,
+                Color: [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                ShadowShift: [
+                    0,
+                    0
+                ],
+                ShadowRadius: 1,
+                ShadowColor: [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                Italic: false,
+                Underline: false,
+                StrikeOut: false,
+                Monospace: false
+            },
+            Transform: {
+                Tx: 8,
+                Ty: 56,
+                Tz: 0,
+                Sx: 1,
+                Sy: 1,
+                Sz: 1,
+                Rx: 0,
+                Ry: 0,
+                Rz: 0,
+                RO: "RotateOrder::XYZ",
+                TO: "TransformOrder::TRS"
+            },
+            Size: [
+                393,
+                193
+            ],
+            TabOrder: 2,
+            UseParentFont: false,
+            Multiselect: true
+        },
+        {
+            Package: "Standard",
+            ClassName: "Button",
+            Name: "ButtonDelete",
+            Transform: {
+                Tx: 416,
+                Ty: 56,
+                Tz: 0,
+                Sx: 1,
+                Sy: 1,
+                Sz: 1,
+                Rx: 0,
+                Ry: 0,
+                Rz: 0,
+                RO: "RotateOrder::XYZ",
+                TO: "TransformOrder::TRS"
+            },
+            Size: [
+                128,
+                31
+            ],
+            TabOrder: 3,
+            Caption: "Delete Selected",
+            OnClick: "ButtonDelete_OnClick"
+        },
+        {
+            Package: "Standard",
+            ClassName: "Button",
+            Name: "ButtonDeleteCompleted",
+            Transform: {
+                Tx: 416,
+                Ty: 96,
+                Tz: 0,
+                Sx: 1,
+                Sy: 1,
+                Sz: 1,
+                Rx: 0,
+                Ry: 0,
+                Rz: 0,
+                RO: "RotateOrder::XYZ",
+                TO: "TransformOrder::TRS"
+            },
+            Size: [
+                128,
+                31
+            ],
+            TabOrder: 4,
+            Caption: "Delete Completed",
+            OnClick: "ButtonDeleteCompleted_OnClick"
+        },
+        {
+            Package: "Standard",
+            ClassName: "Button",
+            Name: "ButtonCompleteAll",
+            Transform: {
+                Tx: 416,
+                Ty: 136,
+                Tz: 0,
+                Sx: 1,
+                Sy: 1,
+                Sz: 1,
+                Rx: 0,
+                Ry: 0,
+                Rz: 0,
+                RO: "RotateOrder::XYZ",
+                TO: "TransformOrder::TRS"
+            },
+            Size: [
+                128,
+                31
+            ],
+            TabOrder: 5,
+            Caption: "Complete All",
+            OnClick: "ButtonCompleteAll_OnClick"
+        },
+        {
+            Package: "Standard",
+            ClassName: "Button",
+            Name: "ButtonUncompleteAll",
+            Transform: {
+                Tx: 416,
+                Ty: 176,
+                Tz: 0,
+                Sx: 1,
+                Sy: 1,
+                Sz: 1,
+                Rx: 0,
+                Ry: 0,
+                Rz: 0,
+                RO: "RotateOrder::XYZ",
+                TO: "TransformOrder::TRS"
+            },
+            Size: [
+                128,
+                31
+            ],
+            TabOrder: 6,
+            Caption: "Make All Uncompleted",
+            OnClick: "ButtonUncompleteAll_OnClick"
+        },
+        {
+            Package: "Standard",
+            ClassName: "Button",
+            Name: "ButtonClear",
+            Transform: {
+                Tx: 416,
+                Ty: 216,
+                Tz: 0,
+                Sx: 1,
+                Sy: 1,
+                Sz: 1,
+                Rx: 0,
+                Ry: 0,
+                Rz: 0,
+                RO: "RotateOrder::XYZ",
+                TO: "TransformOrder::TRS"
+            },
+            Size: [
+                128,
+                31
+            ],
+            TabOrder: 7,
+            Caption: "Delete All",
+            OnClick: "ButtonClear_OnClick"
+        }
+    ]
+}
